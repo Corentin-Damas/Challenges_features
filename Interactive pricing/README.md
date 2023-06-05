@@ -1,8 +1,11 @@
 # Frontend Mentor - Design to aim for
 
-This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8).
 
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
+
+This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8).
+
+# INCOMING
 
 ## The challenge
 

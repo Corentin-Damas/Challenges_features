@@ -39,9 +39,13 @@ input.addEventListener("input", () => {
   // slider.style.background = sliderColor;
 });
 
-input.addEventListener("click", function () {
+input.addEventListener("input", function () {
   let x = input.value;
-  console.log(`this is the background ${input.style.background}`);
-  // slider.style.background =
-  //   "linear-gradient(90deg, hsl(174, 86%, 45%) 60%, hsl(224, 65%, 95%) 60%);";
+  let color =
+    "linear-gradient(90deg, hsl(174, 86%, 45%)" +
+    x +
+    "%, hsl(224, 65%, 95%)" +
+    x +
+    "%)";
+  slider.style.background = color;
 });

@@ -187,11 +187,11 @@ p {
   height: 1rem;
   background: linear-gradient(
     90deg,
-    hsl(174, 86%, 45%) 10%,
-    hsl(224, 65%, 95%) 10%
+    hsl(174, 86%, 45%) 50%,
+    hsl(224, 65%, 95%) 50%
   );
   outline: none;
-  transition: all 0.2s;
+  /* transition: all 0.2s; */
   border-radius: 3rem;
   box-shadow: 0 0.6rem 2rem hsla(227, 35%, 25%, 0.4);
 }

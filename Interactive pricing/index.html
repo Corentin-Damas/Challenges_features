@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Interactive pricing component</title>
   </head>
@@ -23,47 +23,65 @@
         </p>
       </header>
       <section class="component">
-        <div class="component-container">
-          <h3 class="header-3"><span id="pageviews-value"></span> pageviews</h3>
-          <p><span class="value" id="pageviews-price"></span> /month</p>
-          <div class="bar-price"></div>
-          <input type="range" id="pageviews" name="pageviews" list="markers" min="0" max="100" step="1" />
-          <datalist id="markers">
-            <option value="0"></option>
-            <option value="25"></option>
-            <option value="50"></option>
-            <option value="75"></option>
-            <option value="100"></option>
-          </datalist>
-          <p>Monthly Billing</p>
+        <div class="component-box">
+          <div class="component-box-top">
+            <div class="pricing u-margin-bot-m">
+              <h3 class="header-3">
+                <span id="pageviews-value"></span> pageviews
+              </h3>
+              <p class="price-align">
+                <span class="price-value" id="pageviews-price"></span>/ month
+              </p>
+            </div>
 
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-          <p>Yearly Billing</p>
-          <h6>25% discount</h6>
-          <hr>
-          <div class="verified">
-            <svg class="check-icon">
-              <use xlink:href="images/icon-check.svg#check"></use>
-            </svg>
-            <p>Unlimited websites</p>
+            <div class="bar-price u-margin-bot-m">
+              <input
+                type="range"
+                class="range-slider"
+                id="pageviews"
+                name="pageviews"
+                min="0"
+                max="100"
+                step="1"
+              />
+            </div>
+
+            <div class="billing-options u-margin-bot-m">
+              <p>Monthly Billing</p>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <p>Yearly Billing</p>
+              <h6 class="discount">25% discount</h6>
+            </div>
+            <hr />
           </div>
-          <div class="verified">
-            <svg class="check-icon">
-              <use xlink:href="images/icon-check.svg#check"></use>
-            </svg>
-            <p>100% data ownership</p>
+
+          <div class="footer">
+            <div class="assurance">
+              <div class="verified">
+                <svg class="check-icon">
+                  <use xlink:href="images/icon-check.svg#check"></use>
+                </svg>
+                <p>Unlimited websites</p>
+              </div>
+              <div class="verified">
+                <svg class="check-icon">
+                  <use xlink:href="images/icon-check.svg#check"></use>
+                </svg>
+                <p>100% data ownership</p>
+              </div>
+              <div class="verified">
+                <svg class="check-icon">
+                  <use xlink:href="images/icon-check.svg#check"></use>
+                </svg>
+                <p>Email report</p>
+              </div>
+            </div>
+            <a href="#"><button class="btn-trial">Start my trial -></button></a>
           </div>
-          <div class="verified">
-            <svg class="check-icon">
-              <use xlink:href="images/icon-check.svg#check"></use>
-            </svg>
-            <p>Email report</p>
-          </div>
-          <a href="#"><button class="btn-trial">Start my trial -> </button></a>
-        </div>        
+        </div>
       </section>
     </main>
   </body>

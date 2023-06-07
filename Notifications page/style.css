@@ -1,0 +1,46 @@
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+
+:root {
+  --cl-primary-red: hsl(1, 90%, 64%);
+  --cl-primary-blue: hsl(219, 85%, 26%);
+
+  --cl-White: hsl(0, 0%, 100%);
+  --cl-light-gray-blue-1: hsl(210, 60%, 98%);
+  --cl-light-gray-blue-2: hsl(211, 68%, 94%);
+  --cl-light-gray-blue-3: hsl(205, 33%, 90%);
+  --cl-dark-blue-1: hsl(219, 14%, 63%);
+  --cl-dark-blue-2: hsl(219, 12%, 42%);
+  --cl-dark-blue63: hsl(224, 21%, 14%);
+  /* color: var(--main-color) */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img,
+svg,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}

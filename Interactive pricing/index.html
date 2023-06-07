@@ -25,16 +25,14 @@
       <section class="component">
         <div class="component-box">
           <div class="component-box-top">
-            <div class="pricing u-margin-bot-m">
-              <h3 class="header-3">
-                <span id="pageviews-value"></span> pageviews
-              </h3>
-              <p class="price-align">
-                <span class="price-value" id="pageviews-price"></span>/ month
-              </p>
-            </div>
+            <h3 class="header-3-grid">
+              <span id="pageviews-value"></span> pageviews
+            </h3>
+            <p class="price-align">
+              <span class="price-value" id="pageviews-price"></span>/ month
+            </p>
 
-            <div class="bar-price u-margin-bot-m">
+            <div class="bar-price">
               <input
                 type="range"
                 class="range-slider"
@@ -46,19 +44,21 @@
               />
             </div>
 
-            <div class="billing-options u-margin-bot-m">
+            <div class="billing-options">
               <p>Monthly Billing</p>
               <label class="switch">
-                <input type="checkbox" />
+                <input type="checkbox" class="yearlybill-checkbox" />
                 <span class="slider round"></span>
               </label>
               <p>Yearly Billing</p>
-              <h6 class="discount">25% discount</h6>
+              <h6 class="discount">-25%<span class="hide"> discount</span> </h6>
             </div>
+          </div>
+          <div>
             <hr />
           </div>
 
-          <div class="footer">
+          <div class="footer grid-2">
             <div class="assurance">
               <div class="verified">
                 <svg class="check-icon">

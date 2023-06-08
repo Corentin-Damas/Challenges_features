@@ -3,42 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Notifications page</title>
   </head>
   <body>
-    Notifications 3 Mark all as read Mark Webber reacted to your recent post My
-    first tournament today! 1m ago Angela Gray followed you 5m ago Jacob
-    Thompson has joined your group Chess Club 1 day ago Rizky Hasanuddin sent
-    you a private message 5 days ago Hello, thanks for setting up the Chess
-    Club. I've been a member for a few weeks now and I'm already having lots of
-    fun and improving my game. Kimberly Smith commented on your picture 1 week
-    ago Nathan Peterson reacted to your recent post 5 end-game strategies to
-    increase your win rate 2 weeks ago Anna Kim left the group Chess Club 2
-    weeks ago
+    <section class="feature-container">
+      <header class="header">
+        <div class="nb-notifications">
+          <h2>Notifications <span class="notification-count"></span></h2>
+        </div>
+        <div class="mask-read">
+          <p><span class="mask-text">Mark all as read</span></p>
+        </div>
+      </header>
+      <main class="notifications">
+        <div class="single-notification unread">
+          <img
+            class="user-img"
+            src="assets/avatar-mark-webber.webp"
+            alt="image user mark webber"
+          />
+          <div class="notification-content">
+            <p>
+              <span class="user-name">Mark Webber</span> reacted to your recent
+              post <a href="#">My first tournament today!</a>
+            </p>
+            <h6>1m ago</h6>
+          </div>
+        </div>
+        <div class="single-notification unread">
+          <img
+            class="user-img"
+            src="assets/avatar-angela-gray.webp"
+            alt="image user Angela Gray"
+          />
+          <div class="notification-content">
+            <p><span class="user-name">Angela Gray</span> followed you</p>
+            <h6>5m ago</h6>
+          </div>
+        </div>
+        <div class="single-notification unread">
+          <img
+            class="user-img"
+            src="assets/avatar-jacob-thompson.webp"
+            alt="image user Jacob Thompson"
+          />
+          <div class="notification-content">
+            <p>
+              <span class="user-name">Jacob Thompson</span> has joined your
+              group
+              <a href="#" class="user-group"> Chess Club </a>
+            </p>
+            <h6>1 day ago</h6>
+          </div>
+        </div>
+        <div class="single-notification">
+          <img
+            class="user-img"
+            src="assets/avatar-rizky-hasanuddin.webp"
+            alt="image user rizky hasanuddin"
+          />
+          <div class="notification-content">
+            <p>
+              <span class="user-name">Rizky Hasanuddin</span> sent you a private
+              message
+            </p>
+            <h6>5 days ago</h6>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+            <p class="private-msg">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </div>
+        <div class="single-notification">
+          <img
+            class="user-img"
+            src="assets/avatar-kimberly-smith.webp"
+            alt="image user Kimberly Smith"
+          />
+          <div class="notification-content">
+            <p>
+              <span class="user-name">Kimberly Smith</span> commented on your
+              picture
+            </p>
+            <h6>1 week ago</h6>
+          </div>
+        </div>
+        <div class="single-notification">
+          <img
+            class="user-img"
+            src="assets/avatar-nathan-peterson.webp"
+            alt="image user Nathan Peterson"
+          />
+          <div class="notification-content">
+            <p>
+              <span class="user-name">Nathan Peterson</span> reacted to your
+              recent post
+              <a href="#">5 end-game strategies to increase your win rate</a>
+            </p>
+            <h6>2 weeks ago</h6>
+          </div>
+        </div>
+        <div class="single-notification">
+          <img
+            class="user-img"
+            src="assets/avatar-anna-kim.webp"
+            alt="image user Anna Kim"
+          />
+          <div class="notification-content">
+            <p>
+              <span class="user-name">Anna Kim</span> Left the group
+              <a href="#" class="user-group">Chess club</a>
+            </p>
+            <h6>1m ago</h6>
+          </div>
+        </div>
+      </main>
+    </section>
   </body>
+  <script src="script.js"></script>
 </html>
-
-<!-- style
-
-### Font
-
-- Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
-- Weights: 500, 800
-
-
--->

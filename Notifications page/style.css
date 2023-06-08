@@ -15,7 +15,7 @@ The designs were created to the following widths:
   --cl-light-gray-blue-3: hsl(205, 33%, 90%);
   --cl-dark-blue-1: hsl(219, 14%, 63%);
   --cl-dark-blue-2: hsl(219, 12%, 42%);
-  --cl-dark-blue63: hsl(224, 21%, 14%);
+  --cl-dark-blue-3: hsl(224, 21%, 14%);
   /* color: var(--main-color) */
 }
 
@@ -43,4 +43,150 @@ body {
   font-size: 1.6rem;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cl-light-gray-blue-3);
+}
+
+.feature-container {
+  background-color: var(--cl-White);
+  max-width: 80rem;
+  max-height: 90vh;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+/*////////////////////////////////////*/
+/*//// TYPOGRAPHY  */
+
+
+
+p {
+ font-weight: 500;
+ font-size: 1.6rem;
+ color: var(--cl-dark-blue-2);
+}
+
+h6 {
+  color: var(--cl-dark-blue-1);
+  font-weight: 500;
+}
+
+a,
+a:visited,
+a:focus {
+  color: var(--cl-dark-blue-3);
+  margin-left: 0.5rem;
+  font-style: none;
+  text-decoration: none;
+}
+.user-name {
+  color: var(--cl-dark-blue-3);
+  font-weight: 800;
+}
+
+.user-group {
+  color: var(--cl-primary-blue);
+  font-weight: 800;
+}
+
+/*////////////////////////////////////*/
+/*//// HEADER  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.notification-count{
+  background-color: var(--cl-primary-blue);
+  color: var(--cl-White);
+  font-weight: 500;
+  padding: 0.2rem 1rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+}
+.mask-read {
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all .2s;
+}
+
+.mask-text {
+  color: var(--cl-dark-blue-3);
+}
+
+.mask-read:hover {
+  transform: translateY(-2px);
+}
+
+.mask-read:active {
+  transform: translateY(-1px);
+}
+
+
+/*////////////////////////////////////*/
+/*//// MAIN CONTENT  */
+
+.single-notification {
+  display: flex;
+  justify-content: start;
+  padding: 1.5rem;
+}
+
+.single-notification:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+
+.user-img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.notification-content {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-inline: 1rem;
+  gap: 0.5rem;
+}
+
+.private-msg {
+  border: 1px solid;
+  border-color: hsl(219, 14%, 63%);
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+}
+
+/*////////////////////////////////////*/
+/*//// UNREAD MARKS  */
+
+.unread {
+  background-color: var(--cl-light-gray-blue-2);
+  border-radius: 1rem;
+}
+
+.single-notification.unread p {
+  position: relative;
+}
+.single-notification.unread p::after{
+  content: "";
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+
 }

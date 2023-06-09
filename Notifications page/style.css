@@ -3,8 +3,15 @@ The designs were created to the following widths:
 
 - Mobile: 375px
 - Desktop: 1440px 
-*/
 
+/// MEDIA QUERY SELECTOR
+
+650px = 40,625em  Design Breakpoint & Tablet portrait
+400px = 25em  Mobile 
+
+@media only screen and (max-width: 40.625em) {} 
+
+*/
 :root {
   --cl-primary-red: hsl(1, 90%, 64%);
   --cl-primary-blue: hsl(219, 85%, 26%);
@@ -29,6 +36,12 @@ The designs were created to the following widths:
 
 html {
   font-size: 62.5%;
+  @media only screen and (max-width: 40.625em) {
+    font-size: 55%;
+  } 
+  @media only screen and (max-width:25em) {
+    font-size: 50%;
+  } 
 }
 
 img,
@@ -49,20 +62,24 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--cl-light-gray-blue-3);
+  min-width: 300px;
 }
 
 .feature-container {
   background-color: var(--cl-White);
   max-width: 80rem;
-  max-height: 90vh;
+  
+
   padding: 3rem;
   border-radius: 1rem;
+  
+  @media only screen and (max-width: 40.625em) {
+    padding: 2rem;
+  } 
 }
 
 /*////////////////////////////////////*/
 /*//// TYPOGRAPHY  */
-
-
 
 p {
  font-weight: 500;
@@ -73,6 +90,7 @@ p {
 h6 {
   color: var(--cl-dark-blue-1);
   font-weight: 500;
+  font-size: 1.3rem;
 }
 
 a,
@@ -83,9 +101,16 @@ a:focus {
   font-style: none;
   text-decoration: none;
 }
+
+a:hover {
+  color: var(--cl-primary-blue);
+  font-weight: 800;
+}
+
 .user-name {
   color: var(--cl-dark-blue-3);
   font-weight: 800;
+  cursor: pointer;
 }
 
 .user-group {
@@ -113,7 +138,7 @@ a:focus {
 .mask-read {
   cursor: pointer;
   transform: translateY(0);
-  transition: all .2s;
+  transition: transform .2s;
 }
 
 .mask-text {
@@ -122,6 +147,8 @@ a:focus {
 
 .mask-read:hover {
   transform: translateY(-2px);
+  color: var(--cl-primary-blue);
+  font-weight: 800;
 }
 
 .mask-read:active {
@@ -142,11 +169,21 @@ a:focus {
   margin-bottom: 1rem;
 }
 
+.user-name:hover {
+  color: var(--cl-primary-blue);
+}
 
-.user-img {
+
+.user-img,
+.img-notif
+ {
   width: 4rem;
   height: 4rem;
   margin-right: 1rem;
+}
+
+.img-notif {
+  cursor: pointer;
 }
 
 .notification-content {
@@ -165,6 +202,12 @@ a:focus {
   padding: 1rem 2rem;
   border-radius: 0.4rem;
   margin-top: 1rem;
+  cursor: pointer;
+}
+
+.private-msg:hover{
+  background-color: var(--cl-light-gray-blue-2);
+  color: var(--cl-dark-blue-3);
 }
 
 /*////////////////////////////////////*/

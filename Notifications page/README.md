@@ -17,6 +17,8 @@ Users should be able to:
 
 ### My solution
 
+![](./screenshots/C2_result.jpg)
+
 ### Built with
 
 - Semantic HTML5 markup

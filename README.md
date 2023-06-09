@@ -8,16 +8,18 @@ In each files, they will be a presentation of the challenge with the design to r
 
 ## Difficulty scale
 
-The difficulty for each of the challenges are going from 1 to 5 where :
-1 - Easy  (Generaly only HTML and CSS)
-2 - Normal (HTML CSS and a little bit of Javascript)
-3 - Medium
-4 - Hard
-5 - Extremly Hard
+The difficulty for each of the challenges are going from 1 to 3 where :
+1 - Easy    (Generaly only HTML and CSS)
+2 - Medium  (HTML CSS and a little bit of Javascript)
+3 - Hard
+
+
 
 ## Challenges completed
 ### 2/~30
 
-1 -- Interactive pricing ( difficulty: 2/5 ): Little component that have a range of price depending on the customer choise and apply a on the bill for a monthly or annual bill. 
+1 -- Interactive pricing ( difficulty: 2/3 ): Little component that have a range of price depending on the customer choise and apply a on the bill for a monthly or annual bill. 
 
-2 - Notification page ( difficulty: 2/5 ) : Little component has many social media has, where you can check different activities and messages from your contacts. 
+2 - Notification page ( difficulty: 2/3 ) : Little component has many social media has, where you can check different activities and messages from your contacts. 
+
+3 - Result prompt ( difficulty: 1/3 ) : Little component that display the result of a cognitive test

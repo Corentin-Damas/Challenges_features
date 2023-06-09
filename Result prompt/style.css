@@ -1,0 +1,58 @@
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+### Font
+- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+- Weights: 500, 700, 800 
+*/
+
+:root {
+/* p Primary colors */
+--p-light-red: hsl(0, 100%, 67%);
+--p-orangey-yellow: hsl(39, 100%, 56%);
+--p-green-teal: hsl(166, 100%, 37%);
+--p-cobalt-blue: hsl(234, 85%, 45%);
+
+/* n neutral colors */
+--n-white: hsl(0, 0%, 100%);
+--n-pale-blue: hsl(221, 100%, 96%);
+--n-light-lavender: hsl(241, 100%, 89%);
+--n-dark-gray-blue: hsl(224, 30%, 27%);
+
+/* gr gradient colors */
+--gr-light-blue-1: hsl(252, 100%, 67%);
+--gr-light-blue-2: hsl(241, 81%, 54%);
+
+/* circle colors */
+--ci-blue-: hsla(256, 72%, 46%, 1);
+--ci-blue-: hsla(241, 72%, 46%, 0);
+
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img,
+svg,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1.8rem;
+}

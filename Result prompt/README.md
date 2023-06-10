@@ -16,7 +16,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-design.jpg)
+## The challenge
+![](./screenshots/desktop-design.jpg)
+
+## My result
+![](./screenshots/c3_result.jpg)
 
 ### Built with
 

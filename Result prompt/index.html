@@ -14,9 +14,58 @@
     <title>Results Cognitive test summary</title>
   </head>
   <body>
-    Your Result 76 of 100 Great You scored higher than 65% of the people who
-    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
-    / 100 Visual 72 / 100 Continue
+    <section class="container">
+      <div class="grid">
+        <div class="grid__result">
+          <h3 class="result__header-1 box__header">Your Result</h3>
+          <div class="result__score-circle">
+            <h1 class="score-user">76</h1>
+            <p class="score-scale">of 100</p>
+          </div>
+          <div class="result__text">
+            <h2 class="result_hearder-2">Great</h2>
+            <p class="result-subtext">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="grid__summary">
+          <h3 class="summary__header-1 box__header">Summary</h3>
+          <div class="summary__results">
+            <div class="summary__skill-box skill-box-1">
+              <svg class="skill-icon">
+                <use xlink:href="assets/icon-reaction.svg#reaction"></use>
+              </svg>
+              <h4>Reaction</h4>
+              <h5 class="user-skill-score"><span class="skill-score">80</span> / 100</h5>
+            </div>
+            <div class="summary__skill-box skill-box-2">
+              <svg class="skill-icon">
+                <use xlink:href="assets/icon-memory.svg#memory"></use>
+              </svg>
+              <h4>Memory</h4>
+              <h5 class="user-skill-score"><span class="skill-score">92</span> / 100</h5>
+            </div>
+            <div class="summary__skill-box skill-box-3">
+              <svg class="skill-icon">
+                <use xlink:href="assets/icon-verbal.svg#verbal"></use>
+              </svg>
+              <h4>Verbal</h4>
+              <h5 class="user-skill-score"><span class="skill-score">61</span> / 100</h5>
+            </div>
+            <div class="summary__skill-box skill-box-4">
+              <svg class="skill-icon">
+                <use xlink:href="assets/icon-visual.svg#visual"></use>
+              </svg>
+              <h4>Visual</h4>
+              <h5 class="user-skill-score"><span class="skill-score">72</span> / 100</h5>
+            </div>
+          </div>
+          <button class="btn-continue"><p class="btn-text">Continue</p></button>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="script.js"></script>
 </html>

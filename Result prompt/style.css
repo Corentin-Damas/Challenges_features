@@ -10,26 +10,25 @@ The designs were created to the following widths:
 */
 
 :root {
-/* p Primary colors */
---p-light-red: hsl(0, 100%, 67%);
---p-orangey-yellow: hsl(39, 100%, 56%);
---p-green-teal: hsl(166, 100%, 37%);
---p-cobalt-blue: hsl(234, 85%, 45%);
+  /* p Primary colors */
+  --p-light-red: hsl(0, 100%, 67%);
+  --p-orangey-yellow: hsl(39, 100%, 56%);
+  --p-green-teal: hsl(166, 100%, 37%);
+  --p-cobalt-blue: hsl(234, 85%, 45%);
 
-/* n neutral colors */
---n-white: hsl(0, 0%, 100%);
---n-pale-blue: hsl(221, 100%, 96%);
---n-light-lavender: hsl(241, 100%, 89%);
---n-dark-gray-blue: hsl(224, 30%, 27%);
+  /* n neutral colors */
+  --n-white: hsl(0, 0%, 100%);
+  --n-pale-blue: hsl(221, 100%, 96%);
+  --n-light-lavender: hsl(241, 100%, 89%);
+  --n-dark-gray-blue: hsl(224, 30%, 27%);
 
-/* gr gradient colors */
---gr-light-blue-1: hsl(252, 100%, 67%);
---gr-light-blue-2: hsl(241, 81%, 54%);
+  /* gr gradient colors */
+  --gr-light-blue-1: hsl(252, 100%, 67%);
+  --gr-light-blue-2: hsl(241, 81%, 54%);
 
-/* circle colors */
---ci-blue-: hsla(256, 72%, 46%, 1);
---ci-blue-: hsla(241, 72%, 46%, 0);
-
+  /* circle colors */
+  --ci-blue-1: hsla(256, 72%, 46%, 1);
+  --ci-blue-2: hsla(241, 72%, 46%, 0);
 }
 
 *,
@@ -53,6 +52,176 @@ picture {
 
 body {
   box-sizing: border-box;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.8rem;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--n-pale-blue);
+}
+
+/*//////////////////////////////////////////////////*/
+/* Typography*/
+p {
+  font-weight: 500;
+}
+
+.container {
+  background-color: var(--n-white);
+  border-radius: 2rem;
+  box-shadow: 0 2rem 4rem hsla(256, 72%, 46%, 0.2);
+}
+
+.grid {
+  width: 75rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(30vh, 50vh);
+}
+
+.grid__result,
+.grid__summary {
+  padding: 3rem 4rem 5rem 4rem;
+}
+
+.grid__result,
+.result__score-circle,
+.result__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid__result {
+  background-image: linear-gradient(
+    to bottom,
+    var(--gr-light-blue-1),
+    var(--gr-light-blue-2)
+  );
+  border-radius: 2rem;
+
+  justify-content: space-between;
+}
+
+.grid__result > * {
+  color: var(--n-white);
+}
+
+.result__score-circle {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--ci-blue-1),
+    var(--ci-blue-2)
+  );
+
+  justify-content: center;
+}
+
+.result__text {
+  gap: 2rem;
+  justify-content: center;
+}
+
+.result-subtext {
+  text-align: center;
+}
+
+.score-user {
+  font-weight: 900;
+  font-size: 7rem;
+}
+
+.grid__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+
+.skill-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.summary__results {
+  width: 100%;
+}
+
+.summary__results > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.summary__skill-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  height: 6rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.skill-box-1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: var(--p-light-red);
+}
+
+.skill-box-2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: var(--p-orangey-yellow);
+}
+
+.skill-box-3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: var(--p-green-teal);
+}
+.skill-box-4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: var(--p-cobalt-blue);
+}
+
+.user-skill-score {
+  margin-left: auto;
+  color: hsla(224, 30%, 27%, 0.6);
+}
+
+.skill-score {
+  font-weight: 900;
+  color: var(--n-dark-gray-blue);
+}
+
+.btn-continue,
+.btn-continue:focus {
+  color: var(--n-white);
+  border: none;
+  background-image: linear-gradient(
+    to bottom,
+    var(--gr-light-blue-1),
+    var(--gr-light-blue-2)
+  );
+  width: 100%;
+  border-radius: 3rem;
+  height: 4.5rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.btn-text {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.btn-continue:hover {
+  transform: translateY(-2px);
+}
+
+.btn-continue:active {
+  transform: translateY(0px);
 }

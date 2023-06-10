@@ -17,7 +17,7 @@ Users should be able to:
 ### Screenshot
 
 ## The challenge
-![](./screenshots/desktop-design.jpg)
+![](./screenshots/active-states.jpg)
 
 ## My result
 ![](./screenshots/c3_result.jpg)

@@ -4,6 +4,16 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
+900px = 56.25em   Landscape Tablet 
+770px = 48,125 Design Breakpoint
+600px = 37,5 Design Breakpoint
+
+@media only screen and (max-width: 56.25em) {} 
+@media only screen and (max-width: 48.125em) {} 
+@media only screen and (max-width: 37.5em) {} 
+
+
+
 ### Font
 - Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
 - Weights: 500, 700, 800 
@@ -41,6 +51,14 @@ The designs were created to the following widths:
 
 html {
   font-size: 62.5%;
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 56%;
+  } 
+
+  @media only screen and (max-width: 48.125em) {
+    font-size: 50%;
+  } 
 }
 
 img,
@@ -61,6 +79,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--n-pale-blue);
+  min-width: 375px;
 }
 
 /*//////////////////////////////////////////////////*/
@@ -73,13 +92,23 @@ p {
   background-color: var(--n-white);
   border-radius: 2rem;
   box-shadow: 0 2rem 4rem hsla(256, 72%, 46%, 0.2);
+  min-height: 40rem;
+
+ 
 }
 
 .grid {
   width: 75rem;
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(30vh, 50vh);
+  grid-template-rows: minmax(40rem, 50vh);
+
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 45vh 55vh;
+  } 
 }
 
 .grid__result,
@@ -104,6 +133,12 @@ p {
   border-radius: 2rem;
 
   justify-content: space-between;
+
+  @media only screen and (max-width: 37.5em) {
+    border-radius: 5rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+  }
 }
 
 .grid__result > * {
@@ -121,6 +156,11 @@ p {
   );
 
   justify-content: center;
+
+  @media only screen and (max-width: 37.5em) {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 
 .result__text {
@@ -147,6 +187,10 @@ p {
 .skill-icon {
   width: 2rem;
   height: 2rem;
+  @media only screen and (max-width: 48.125em) {
+    width: 3rem;
+    height: 2.5rem;
+  } 
 }
 
 .summary__results {
@@ -199,6 +243,7 @@ p {
 
 .btn-continue,
 .btn-continue:focus {
+  margin-top: 2rem;
   color: var(--n-white);
   border: none;
   background-image: linear-gradient(
@@ -208,9 +253,13 @@ p {
   );
   width: 100%;
   border-radius: 3rem;
+  min-height: 4rem;
   height: 4.5rem;
   cursor: pointer;
   transition: all 0.1s;
+  @media only screen and (max-width: 48.125em) {
+    height: 6rem;
+  } 
 }
 
 .btn-text {

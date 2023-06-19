@@ -51,20 +51,19 @@ html {
   font-size: 62.5%;
   @media only screen and (max-width: 62.5em) {
     font-size: 55%;
-  } 
+  }
 }
 
 img,
 svg,
 picture {
-
   display: block;
 }
 
 body {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-  display:flex;
+  font-family: "Inter", sans-serif;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -95,7 +94,7 @@ p {
   @media only screen and (max-width: 50em) {
     font-size: 2rem;
     line-height: 3rem;
-  }  
+  }
 }
 
 .testimonial__author {
@@ -108,31 +107,26 @@ p {
 
 .carousel {
   padding-inline: 10rem;
-  max-width: 120rem ;
+  max-width: 120rem;
   height: 70rem;
   background-color: white;
   position: relative;
   margin: 5%;
-  
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-content: center;
   align-items: center;
 
-
   background-image: url(images/pattern-bg.svg);
   background-repeat: no-repeat;
-  background-position:  90% 50%;
-  background-size: 50% ;
-
+  background-position: 90% 50%;
+  background-size: 50%;
 
   @media only screen and (max-width: 62.5em) {
     padding-inline: 5%;
-    
-  } 
-
-  
+  }
 
   @media only screen and (max-width: 50em) {
     background-position: 50% 10%;
@@ -140,16 +134,15 @@ p {
     grid-template-rows: 1fr 1fr;
     padding-inline: 0%;
     margin: 0%;
-  
-  } 
+  }
 
   @media only screen and (max-width: 32em) {
     height: 100vh;
-    background-size: 80% ;
-  } 
+    background-size: 80%;
+  }
   @media only screen and (max-width: 32em) {
-    background-size: 90% ;
-  } 
+    background-size: 90%;
+  }
 }
 
 .testimonials {
@@ -174,24 +167,22 @@ p {
 
 .testimonial__details {
   @media only screen and (max-width: 50em) {
-
     text-align: center;
   }
 }
 
 .testimonial__author {
-  display: block;
+  @media only screen and (max-width: 50em) {
+    display: block;
+  }
 }
 
-
 .profil {
-
   width: 100%;
   position: relative;
   @media only screen and (max-width: 50em) {
     grid-row: 1/2;
     margin-top: 10%;
-    
   }
 }
 
@@ -200,9 +191,8 @@ p {
   height: 100%;
 }
 
-
 .profil-img {
-  box-shadow: 0 2rem 8rem -3rem hsla(240, 38%, 20%, 0.4) ;
+  box-shadow: 0 2rem 8rem -3rem hsla(240, 38%, 20%, 0.4);
   z-index: 10;
   max-width: 90%;
   margin-inline: auto;
@@ -212,22 +202,20 @@ p {
   }
 }
 
-
 /*///////////////////////////////////////////*/
 /* Buttons*/
 
 .btns {
-display:flex;
-justify-content: center;
-align-items: center;
-position: absolute;
-bottom: -2.5rem;
-left: 5rem ;
-@media only screen and (max-width: 50em) {
-  
-left: 50% ;
-transform: translateX(-50%);
-} 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 5rem;
+  @media only screen and (max-width: 50em) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .btn {
@@ -238,31 +226,29 @@ transform: translateX(-50%);
   width: 5rem;
   background-color: white;
   cursor: pointer;
-  
-  display:flex;
+
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .arrow_icon {
   height: 30%;
-  
 }
 
 .btn-previous {
-  border-top-left-radius: 2rem ;
+  border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
 .btn-next {
-  border-top-right-radius: 2rem ;
+  border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
-
 
 /*///////////////////////////////////////////*/
 /* Decoration */
 
-.pattern-quote{
+.pattern-quote {
   fill: purple;
   position: absolute;
   top: -7rem;
@@ -282,8 +268,6 @@ transform: translateX(-50%);
   fill: red;
   width: 100%;
 }
-
-
 
 /*///////////////////////////////////////////*/
 /* Animation */

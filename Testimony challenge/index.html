@@ -14,7 +14,13 @@
   </head>
   <body>
     <section class="carousel">
+      <svg class="pattern-curves">
+        <use xlink:href="images/pattern-curve.svg#curve"></use>
+      </svg>
       <div class="testimonials">
+        <svg class="pattern-quote">
+          <use xlink:href="images/pattern-quotes.svg#quotes"></use>
+        </svg>
         <p class="testimonial__text">
           “ I’ve been interested in coding for a while but never taken the jump,
           until now. I couldn’t recommend this course enough. I’m now in the job
@@ -43,20 +49,17 @@
           <img src="images/image-tanya.jpg" alt="" class="profil-img" />
           <img src="images/image-john.jpg" alt="" class="profil-img hide" />
         </div>
-        <button class="previous">
-          <svg class="arrow_icon">
-            <use xlink:href="images/icon-prev.svg#prev"></use>
-          </svg>
-        </button>
-    
-        <button class="next">
-          <svg class="arrow_icon">
-            <use xlink:href="images/icon-next.svg#next"></use>
-          </svg>
-        </button>
+        <div class="btns">
+          <button class="btn btn-previous">
+            <img src="images/icon-prev.svg" class="arrow_icon" alt="" />
+          </button>
+
+          <button class="btn btn-next">
+            <img src="images/icon-next.svg" class="arrow_icon" alt="" />
+          </button>
+        </div>
       </div>
     </section>
-    
   </body>
   <script src="script.js"></script>
 </html>

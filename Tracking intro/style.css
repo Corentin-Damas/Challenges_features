@@ -1,0 +1,56 @@
+/*
+## Layout
+
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+### Body Copy
+
+- Font size: 18px
+
+### Headings, Call-to-actions, Navigation
+
+- Family: [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed)
+- Weights: 400, 700
+- font-family: 'Barlow Condensed', sans-serif;
+
+### Body
+
+- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 400 
+- font-family: 'Barlow', sans-serif;
+*/
+
+:root {
+  --m-red: hsl(0, 100%, 68%);
+
+  --n-light-blue: hsl(207, 33%, 95%);
+  --n-grey-blue: hsl(231, 7%, 65%);
+  --n-dark-blue-1: hsl(230, 11%, 40%);
+  --n-dark-blue-2: hsl(230, 29%, 20%);
+  /* color: var(--main-color) */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img,
+svg,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  box-sizing: border-box;
+}

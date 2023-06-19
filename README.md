@@ -25,3 +25,6 @@ The difficulty for each of the challenges are going from 1 to 3 where :
 3 - Result prompt ( difficulty: 1/3 ) : Little component that display the result of a cognitive test
 
 4 - Testimonials Slider ( difficulty: 2/3 ) : Carousel testimonials slider . A carousel is a slideshow for cycling through a series of content, here we are cycling throught client / user testimonials.
+
+5 - Tracking intro ( difficulty: 1/3 ) : Simple website introduction with all interactive elemements on the page
+

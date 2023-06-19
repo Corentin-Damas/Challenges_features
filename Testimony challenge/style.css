@@ -15,11 +15,23 @@ The designs were created to the following widths:
 ### Font
 
 - Font size: 32px
-
-
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - font-family: 'Inter', sans-serif;
 - Weights: 300, 500, 700 
+
+## Media Qurey
+1200px = 75em     Design break point 
+1000px = 62.5em   Design break point 
+800px = 50em      Design Breakpoint
+512px = 32em      Mobile
+
+600px = 37,5 Design Breakpoint
+
+@media only screen and (max-width: 75em) {} 
+@media only screen and (max-width: 62.5em) {} 
+@media only screen and (max-width: 50em) {} 
+@media only screen and (max-width: 32em) {} 
+
 */
 
 :root {
@@ -37,12 +49,15 @@ The designs were created to the following widths:
 
 html {
   font-size: 62.5%;
+  @media only screen and (max-width: 62.5em) {
+    font-size: 55%;
+  } 
 }
 
 img,
 svg,
 picture {
-  max-width: 100%;
+
   display: block;
 }
 
@@ -55,6 +70,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: var(--grey-blue);
+  min-width: 375px;
 }
 
 /*///////////////////////////////////////////*/
@@ -68,9 +84,18 @@ h6 {
 
 p {
   font-size: 3rem;
+  line-height: 4rem;
   color: var(--dark-blue);
   z-index: 20;
   font-weight: 300;
+  @media only screen and (max-width: 75em) {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  @media only screen and (max-width: 50em) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }  
 }
 
 .testimonial__author {
@@ -78,41 +103,191 @@ p {
   color: var(--dark-blue);
 }
 
+/*///////////////////////////////////////////*/
+/* Carousel */
 
 .carousel {
-  max-height: 80vh;
   padding-inline: 10rem;
-  max-width:150rem ;
+  max-width: 120rem ;
+  height: 70rem;
+  background-color: white;
+  position: relative;
+  margin: 5%;
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: white;
-
-  
   justify-content: center;
+  align-content: center;
   align-items: center;
 
+
+  background-image: url(images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-position:  90% 50%;
+  background-size: 50% ;
+
+
+  @media only screen and (max-width: 62.5em) {
+    padding-inline: 5%;
+    
+  } 
+
+  
+
+  @media only screen and (max-width: 50em) {
+    background-position: 50% 10%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-inline: 0%;
+    margin: 0%;
+  
+  } 
+
+  @media only screen and (max-width: 32em) {
+    height: 100vh;
+    background-size: 80% ;
+  } 
+  @media only screen and (max-width: 32em) {
+    background-size: 90% ;
+  } 
 }
 
-
 .testimonials {
-  z-index: 1;
+  z-index: 10;
+  position: relative;
+  width: 110%;
+  @media only screen and (max-width: 50em) {
+    width: 100%;
+    grid-row: 2/3;
+  }
 }
 
 .testimonial__text {
-  width: 120%;
+  margin-bottom: 4rem;
+  width: 110%;
+  @media only screen and (max-width: 50em) {
+    margin-inline: auto;
+    width: 80%;
+    text-align: center;
+  }
+}
 
+.testimonial__details {
+  @media only screen and (max-width: 50em) {
+
+    text-align: center;
+  }
 }
+
+.testimonial__author {
+  display: block;
+}
+
+
+.profil {
+
+  width: 100%;
+  position: relative;
+  @media only screen and (max-width: 50em) {
+    grid-row: 1/2;
+    margin-top: 10%;
+    
+  }
+}
+
+.profil_imgs {
+  z-index: 10;
+  height: 100%;
+}
+
+
+.profil-img {
+  box-shadow: 0 2rem 8rem -3rem hsla(240, 38%, 20%, 0.4) ;
+  z-index: 10;
+  max-width: 90%;
+  margin-inline: auto;
+  @media only screen and (max-width: 50em) {
+    max-width: 30%;
+    min-width: 28rem;
+  }
+}
+
+
+/*///////////////////////////////////////////*/
+/* Buttons*/
+
+.btns {
+display:flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: -2.5rem;
+left: 5rem ;
+@media only screen and (max-width: 50em) {
+  
+left: 50% ;
+transform: translateX(-50%);
+} 
+}
+
+.btn {
+  background-color: transparent;
+  list-style: none;
+  border-style: none;
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+  cursor: pointer;
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .arrow_icon {
-  height: 2.3rem;
-  width: 2rem;
+  height: 30%;
+  
 }
+
+.btn-previous {
+  border-top-left-radius: 2rem ;
+  border-bottom-left-radius: 2rem;
+}
+.btn-next {
+  border-top-right-radius: 2rem ;
+  border-bottom-right-radius: 2rem;
+}
+
+
+/*///////////////////////////////////////////*/
+/* Decoration */
+
+.pattern-quote{
+  fill: purple;
+  position: absolute;
+  top: -7rem;
+  left: 10rem;
+  @media only screen and (max-width: 50em) {
+    top: -7rem;
+    left: 45%;
+
+    transform: scale(0.5) translateX(-50%);
+  }
+}
+
+.pattern-curves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  fill: red;
+  width: 100%;
+}
+
+
+
+/*///////////////////////////////////////////*/
+/* Animation */
 
 .hide {
   display: none;
-}
-
-.profil-img {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  max-width: 80%;
 }

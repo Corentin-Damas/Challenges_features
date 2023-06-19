@@ -17,7 +17,7 @@ Users should be able to:
 ### Screenshot
 
 Work in progress
-![](./screenshot.jpg)
+![](screenshots/Result.jpg)
 
 ### Built with
 

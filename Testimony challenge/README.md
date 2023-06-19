@@ -14,9 +14,8 @@ Users should be able to:
 ![](screenshots/desktop-preview.jpg)
 
 
-### Screenshot
+### Screenshot - My Result
 
-Work in progress
 ![](screenshots/Result.jpg)
 
 ### Built with

@@ -16,7 +16,7 @@ The difficulty for each of the challenges are going from 1 to 3 where :
 
 
 ## Challenges completed
-### 2/~30
+### 4/~30
 
 1 -- Interactive pricing ( difficulty: 2/3 ): Little component that have a range of price depending on the customer choise and apply a on the bill for a monthly or annual bill. 
 
@@ -27,3 +27,4 @@ The difficulty for each of the challenges are going from 1 to 3 where :
 4 - Testimonials Slider ( difficulty: 2/3 ) : Carousel testimonials slider . A carousel is a slideshow for cycling through a series of content, here we are cycling throught client / user testimonials.
 
 5 - Tracking intro ( difficulty: 1/3 ) : Simple website introduction with all interactive elemements on the page
+

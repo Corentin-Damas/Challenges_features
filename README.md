@@ -13,14 +13,9 @@ The difficulty for each of the challenges are going from 1 to 3 where :
 2 - Medium  (HTML CSS and a little bit of Javascript)
 3 - Hard
 
-
-
 ## Challenges completed
-<<<<<<< HEAD
+
 ### 5/~30
-=======
-### 4/~30
->>>>>>> 4d6485f3fb278a31d3d0fcb983b7158d766d5662
 
 1 -- Interactive pricing ( difficulty: 2/3 ): Little component that have a range of price depending on the customer choise and apply a on the bill for a monthly or annual bill. 
 

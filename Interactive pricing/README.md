@@ -5,7 +5,9 @@
 
 This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8).
 
-# INCOMING
+
+## My Solution to the challenge
+![image](https://github.com/Corentin-Damas/Challenges_features/assets/100703359/7600c1aa-e5ba-43fd-8a1b-a1772bdaed11)
 
 ## The challenge
 

@@ -12,10 +12,11 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Create the background shape using code
 
-### Screenshot
+### My Solution
 
-![](./screenshot.jpg)
+![](./screenshots/my-results.jpg)
 
 ### Built with
 - HTML
 - CSS 
+- Javascript
